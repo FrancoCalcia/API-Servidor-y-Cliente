@@ -37,7 +37,7 @@ El cliente está implementado utilizando requests y permite interactuar con el s
 - passlib
 - python-jose
 
-Puedes instalar las dependencias necesarias para correr el programa. Desde la terminal ejecutar el siguiente comando:
+Puedes instalar las dependencias necesarias para correr el programa. Desde la terminal tienes que ir hasta donde tengas el archivo `requirements.txt` y ejecutar el siguiente comando:
 
 ```bash
 pip install -r requirements.txt
@@ -46,8 +46,8 @@ pip install -r requirements.txt
 
 - **Clonar el repositorio:** Clona este repositorio en la máquina que actuará como servidor.
   ```bash
-  git clone https://github.com/tu-usuario/nombre-del-repositorio.git
-  cd nombre-del-repositorio
+  git clone https://github.com/FrancoCalcia/API-Servidor-y-Cliente.git
+  cd API-Servidor-y-Cliente
   ```
 - **Ejecutar el servidor:** Usa uvicorn para ejecutar el servidor.
   ```bash
@@ -58,8 +58,8 @@ Esto iniciará el servidor en http://localhost:8000.
 ## Configuración y Ejecución del Cliente:
 - **Clonar el repositorio:** Clona este repositorio en la máquina que actuará como cliente.
   ```bash
-  git clone https://github.com/tu-usuario/nombre-del-repositorio.git
-  cd nombre-del-repositorio
+  git clone https://github.com/FrancoCalcia/API-Servidor-y-Cliente.git
+  cd API-Servidor-y-Cliente
    ```
 - **Modificar la URL del servidor:** Abre el archivo cli.py y cambia la variable url para que apunte a la IP del servidor. Por ejemplo, si la IP del servidor es 192.168.1.10:
   ```bash
@@ -108,6 +108,9 @@ Esto iniciará el servidor en http://localhost:8000.
 **Agregar una nueva película:**
 1. Selecciona la opción "6. Agregar una nueva película" en el menú del cliente.
 2. Proporciona los datos de la película (título, año y géneros).
+
+## Configuraciones para el Correcto Funcionamiento
+Para que el proyecto funcione correctamente en dos PCs distintas con la misma IP, asegúrate de configurar correctamente la red y los puertos. Es posible que necesites configurar el reenvío de puertos en tu router y permitir el tráfico a través de los puertos necesarios en el firewall de cada PC.
 
 ## Conclusiones
 Este proyecto demuestra cómo se puede implementar una comunicación API Cliente-Servidor utilizando FastAPI y Python, permitiendo realizar consultas y modificaciones a un archivo JSON desde diferentes hosts en la misma red.
